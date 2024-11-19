@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <div class="whole">
+    <h1>Calculator</h1>
+        <div class="calculator">
+            <input type="text" placeholder="0" id="result" class="display">
+           <div class="buttons">
+                <button onclick="displayContent('7')" class="number">7</button>
+                <button onclick="displayContent('8')" class="number">8</button>
+                <button onclick="displayContent('9')" class="number">9</button>
+        
+                <button onclick="displayContent('+')" class="sign">+</button>
+        
+                <button onclick="displayContent('4')" class="number">4</button>
+                <button onclick="displayContent('5')" class="number">5</button>
+                <button onclick="displayContent('6')" class="number">6</button>
+        
+                <button onclick="displayContent('-')" class="sign">-</button>
+        
+                <button onclick="displayContent('1')" class="number">1</button>
+                <button onclick="displayContent('2')" class="number">2</button>
+                <button onclick="displayContent('3')" class="number">3</button>
+        
+                <button onclick="displayContent('*')" class="sign">*</button>
+        
+                <button onclick="calcClear()" class="number">AC</button>
+                <button onclick="displayContent('0')" class="number">0</button>
+                
+                <button onclick="displayContent('/')" class="sign">/</button>
+                <button onclick="calcOutput()" class="sign">=</button>
+    
+                <button onclick="removeLastDigit()"><i class="fa-solid fa-delete-left"></i></button>
+           </div>
+    
+        </div>
+   </div>
+</body>
+<script src="main.js"></script>
+</html>
